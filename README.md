@@ -47,12 +47,12 @@ A comprehensive web-based life organization application designed to help profess
 
 This project demonstrates my commitment to building practical, user-centered solutions that improve daily productivity.
 
-I'm open to feedback and continued improvements. Feel free to reach out if you'd like to discuss the project or explore collaboration opportunities. And give this repo a star to keep encouaging me.
+I'm open to feedback and continued improvements. Feel free to reach out if you'd like to discuss the project or explore collaboration opportunities. And give this repo a star to keep encouraging me.
 
 ## Screenshots
-![Meno Screenshot 1](https://github.com/DantelCode/Meno/blob/main/screenshots/meno_logo.png)
-![Meno Screenshot 2](https://github.com/DantelCode/Meno/blob/main/screenshots/1.png)
-![Meno Screenshot 3](https://github.com/DantelCode/Meno/blob/main/screenshots/2.png)
+![Meno Screenshot 1](https://github.com/DantelCode/Meno/blob/main/screenshots/meno_logo.PNG)
+![Meno Screenshot 2](https://github.com/DantelCode/Meno/blob/main/screenshots/1.PNG)
+![Meno Screenshot 3](https://github.com/DantelCode/Meno/blob/main/screenshots/2.PNG)
 ![Meno Screenshot 4](https://github.com/DantelCode/Meno/blob/main/screenshots/3.png)
 ![Meno Screenshot 5](https://github.com/DantelCode/Meno/blob/main/screenshots/4.png)
 ![Meno Screenshot 6](https://github.com/DantelCode/Meno/blob/main/screenshots/5.png)
