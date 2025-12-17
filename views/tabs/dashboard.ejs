@@ -1,0 +1,148 @@
+<link rel="stylesheet" href="styles/dashboard.css">
+
+<section id="dashboard" data-page="dashboard">
+  <div class="stat-left">
+    <div style="margin-left: 8px;">
+      <p style="font-weight:700; font-size:20px;">Welcome Back</p>
+      <small class="muted">Just organize your life</small>
+    </div>
+
+    <div class="stats-container">
+      <div class="overview card">
+        <strong style="margin-bottom: 8px;">Overview</strong>
+        <div class="stats">
+          <span class="progress-bar"></span>
+          <small class="percentage">0%</small>
+        </div>
+        <div class="indicators" style="margin-top:12px;">
+          <small class="card">
+            <div class="indicate complete"></div> Completed
+          </small>
+          <small class="card">
+            <div class="indicate undone"></div>Undone
+          </small>
+        </div>
+      </div>
+
+      <div class="stat-right">
+        <div class="quote card">
+          <span>You can plan a week ahead and follow your schedule</span>
+        </div>
+        <div class="stat card">
+          <svg class="stat-icon stat-icon--events" width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Events">
+            <title>Events</title>
+            <rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.25" fill="none" />
+            <path d="M16 2v4M8 2v4" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" />
+            <path d="M3 10h18" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+          </svg>
+          <div>
+            <span>Events Overview</span>
+            <span>0<small>/0</small></span>
+          </div>
+        </div>
+        <div class="stat card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="stat-icon" fill="var(--warning)">
+            <path d="M495.361,105.561H317.897c-9.518,0-16.943,8.28-15.905,17.741c2.705,24.679,8.757,79.886,14.786,134.89
+              c-6.641-0.507-13.24,0.784-19.169,3.794c-4.624-19.28-29.465-34.236-50.998-24.761c-13.954-24.512-49.669-24.112-63.591,0.01
+              c-21.501-9.461-46.326,5.505-50.998,24.758c-20.255-10.298-45.925,0.502-52.053,22.891
+              c-25.181-10.946-54.088,9.291-50.991,37.617c-0.638,0-24.138,0-23.008,0c-2.945,0-5.333,2.388-5.333,5.333
+              s2.388,5.333,5.333,5.333h11.949c2.763,40.987,36.899,73.512,78.575,73.512c103.423,0,252.079,0,357.45,0
+              c14.973,0,27.493-11.223,29.123-26.105c4.733-43.179,21.521-196.336,28.201-257.273
+              C512.304,113.84,504.879,105.561,495.361,105.561z M80.841,297.629c3.394,2.528,8.317,0.243,8.505-4.052
+              c0.98-22.623,28.194-32.76,44.085-17.642c3.868,3.675,10.14,0.002,8.851-5.156c-3.607-14.422,20.619-34.439,40.239-21.722
+              c2.873,1.851,6.692,0.575,7.887-2.586c8.471-22.362,40.295-22.439,48.795,0c1.194,3.157,5.011,4.439,7.887,2.586
+              c19.805-12.823,43.833,7.352,40.239,21.722c-1.288,5.151,4.971,8.832,8.851,5.158c15.883-15.121,43.108-4.98,44.088,17.639
+              c0.187,4.282,5.095,6.588,8.505,4.052c18.698-13.861,45.016,2.43,41.048,24.873H39.79
+              C35.816,300.021,62.175,283.8,80.841,297.629z M96.493,396.014c-35.799,0-65.245-27.735-67.974-62.846h372.571
+              c-2.729,35.112-32.174,62.846-67.974,62.846H96.493z M472.462,379.414c-1.036,9.463-8.997,16.6-18.519,16.6h-81.407
+              c22.074-12.813,37.346-35.989,39.156-62.846h11.949c2.945,0,5.333-2.388,5.333-5.333s-2.388-5.333-5.333-5.333
+              c-0.678,0-23.776,0-23.005,0c3.049-28.206-25.663-48.618-50.994-37.619c-2.928-10.695-10.66-19.732-21.854-24.142l-3.532-32.218
+              h164.746L472.462,379.414z M490.171,217.857H323.087l-10.492-95.716c-0.351-3.167,2.129-5.914,5.302-5.914h177.465
+              c3.174,0,5.653,2.747,5.302,5.914L490.171,217.857z"></path>
+            <path d="M165.506 144.717c7.157 5.116 7.373 15.806.005 21.149-13.054 9.478-13.029 28.894.044 38.335 2.393 1.727 5.723 1.184 7.445-1.2 1.726-2.388 1.187-5.721-1.2-7.445-7.088-5.117-7.311-15.767.049-21.11 13.092-9.503 13.022-29-.141-38.406-7.216-5.155-7.274-15.851-.099-21.079 2.377-1.734 2.901-5.073 1.167-7.453-1.737-2.372-5.067-2.901-7.453-1.167C152.273 115.856 152.362 135.325 165.506 144.717zM212.346 144.717c7.157 5.116 7.373 15.806.005 21.149-13.054 9.478-13.029 28.894.044 38.335 2.393 1.727 5.723 1.184 7.445-1.2 1.726-2.388 1.187-5.721-1.2-7.445-7.088-5.117-7.311-15.767.049-21.11 13.092-9.503 13.022-29-.141-38.406-7.216-5.155-7.274-15.851-.099-21.079 2.377-1.734 2.901-5.073 1.167-7.453-1.737-2.372-5.067-2.901-7.453-1.167C199.113 115.856 199.202 135.325 212.346 144.717zM257.902 144.717c7.151 5.112 7.372 15.801.005 21.149-13.051 9.475-13.033 28.894.044 38.338 2.387 1.717 5.715 1.19 7.447-1.203 1.724-2.388 1.185-5.723-1.203-7.447-7.128-5.141-7.272-15.797.049-21.108 13.091-9.504 13.021-28.997-.141-38.406-7.218-5.157-7.271-15.851-.102-21.079 2.38-1.734 2.903-5.073 1.169-7.453-1.737-2.372-5.073-2.901-7.45-1.167C244.672 115.851 244.755 135.323 257.902 144.717z"></path>
+          </svg>
+          <div>
+            <span>Meals Overview</span>
+            <span>0<small>/0</small></span>
+          </div>
+        </div>
+        <div class="stat card">
+          <svg class="stat-icon stat-icon--shopping" width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shopping">
+            <title>Shopping</title>
+            <path d="M3 6h2l1 9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1-7H6" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <circle cx="10" cy="20" r="1" fill="currentColor" />
+            <circle cx="17" cy="20" r="1" fill="currentColor" />
+          </svg>
+          <div>
+            <span>Shopping List</span>
+            <span>0<small>/0</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search: filter today's items across tables -->
+    <div class="search-row">
+      <input id="dashboardSearch" placeholder="Search today's items..." class="card" style="width:100%;padding:12px;color:var(--text)" />
+    </div>
+  </div>
+
+  <div class="today">
+    <div class="table card">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <strong>Today's Events</strong>
+        <a href="events" class="nav-btn" style="font-size: 12px; font-weight: 500; padding: 8px 12px;">View All</a>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="table card">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <strong>Today's Meals</strong>
+        <a href="meals" class="nav-btn" style="font-size: 12px; font-weight: 500; padding: 8px 12px;">View All</a>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Meal</th>
+            <th>Period</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="table card">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <strong>Today's Shopping Plans</strong>
+        <a href="shopping" class="nav-btn" style="font-size: 12px; font-weight: 500; padding: 8px 12px;">View All</a>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Location</th>
+            <th>Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<script src="scripts/utils.js"></script>
+<script src="scripts/dashboard.js"></script>
