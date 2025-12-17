@@ -2,7 +2,13 @@
   "name": "meno",
   "version": "1.0.0",
   "description": "routine management system",
-  "main": "server.js",
+  "scripts": {
+    "build": "echo 'build step done'",
+    "dev": "node api/server.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "append-field": "^1.0.0",
     "archiver": "^5.3.2",
@@ -206,6 +212,7 @@
     "saxes": "^5.0.1",
     "setimmediate": "^1.0.5",
     "serve-static": "^2.2.0",
+    "serverless-http": "^2.7.0",
     "send": "^1.2.0",
     "setprototypeof": "^1.2.0",
     "raw-body": "^3.0.1",
@@ -247,13 +254,6 @@
     "xmlchars": "^2.2.0",
     "zip-stream": "^4.1.1",
     "xtend": "^4.0.2"
-  },
-  "devDependencies": {
-    "puppeteer": "^21.3.8"
-  },
-  "scripts": {
-    "test": "node server.js",
-    "clear-localstorage": "node tools/clear-localstorage.js"
   },
   "author": "dantel",
   "license": "ISC"
