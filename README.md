@@ -43,6 +43,7 @@ A comprehensive web-based life organization application designed to help profess
 - Install: npm install
 - Run: node server.js
 - Open: http://localhost:3000
+- Note: Fetch Google Events and Send Feedback is not active as Google Api Key and EmailJS credentials are required.
 
 This project demonstrates my commitment to building practical, user-centered solutions that improve daily productivity.
 
