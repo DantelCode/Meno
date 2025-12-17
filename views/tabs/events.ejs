@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles/events.css">
+<link rel="stylesheet" href="styles/shared-styles.css">
 
 <section id="events" data-page="event">
   <div class="calendar-container card">
@@ -26,23 +26,20 @@
   </div>
 
   <div class="item-container card">
-    <div class="top" style="display:flex;align-items:center;gap:8px;">
+    <div class="top">
       <span id="selectedDate">Select a date</span>
-      <button id="addEventBtn" class="nav-btn">+ Add</button>
+      <button id="addEventBtn" class="nav-btn">+ Add Event</button>
     </div>
 
-    <ul id="eventList" class="items">
-      <small id="noEvent">No meals</small>
-    </ul>
+    <ul id="eventList" class="items"></ul>
 
     <div id="eventForm" class="action-tab hidden">
-      <span class="form-title">Add Event</span>
+      <span class="form-title"></span>
       <div class="inputs">
         <input type="text" id="eventTitle" placeholder="Event title" class="card" />
+
         <input id="eventTime" type="time" placeholder="Select time">
-        <div style="margin-top:8px;">
-          <small>Type: Event (fixed)</small>
-        </div>
+
         <div class="event-btns">
           <button id="cancelEvent" class="card nav-btn">Cancel</button>
           <button id="saveEvent" class="card nav-btn">Save</button>
@@ -53,7 +50,7 @@
 </section>
 
 <script src="scripts/utils.js"></script>
-<script src="scripts/shared-calendar.js"></script>
+<script src="scripts/shared-script.js"></script>
 <script>
   window.addEventListener('load', () => {
     renderListForType('event');
