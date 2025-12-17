@@ -2,8 +2,7 @@
 A comprehensive web-based life organization application designed to help professionals and individuals streamline their daily routines.
 
 
-**✅ The Solution - MENO Offers:**
-<br>
+### ✅ The Solution - MENO Offers:
 📊 **Comprehensive Dashboard** - Get an at-a-glance overview of your day with progress tracking and analytics
 <br>
 📅 **Interactive Calendar System** - Visualize all your commitments with intuitive month navigation and smart event indicators
@@ -28,6 +27,16 @@ A comprehensive web-based life organization application designed to help profess
 - EmailJS for User Feedback
 
 
+### Live Site: [link here...]
+
+
+### Getting started:
+- Install: npm install
+- Run: node server.js
+- Open: http://localhost:3000
+- Note: Fetch Google Events and Send Feedback is not active as Google Api Key and EmailJS credentials are required.
+
+
 ### Feature Implementation:
 - User accounts & DB persistence (e.g., MongoDB) to sync data across devices
 - Reminders/notifications (push or email) for upcoming events and shopping
@@ -39,14 +48,7 @@ A comprehensive web-based life organization application designed to help profess
 - Accessibility improvements and ARIA attributes where needed
 
 
-### Getting started:
-- Install: npm install
-- Run: node server.js
-- Open: http://localhost:3000
-- Note: Fetch Google Events and Send Feedback is not active as Google Api Key and EmailJS credentials are required.
-
 This project demonstrates my commitment to building practical, user-centered solutions that improve daily productivity.
-
 I'm open to feedback and continued improvements. Feel free to reach out if you'd like to discuss the project or explore collaboration opportunities. And give this repo a star to keep encouaging me.
 
 ## Screenshots
