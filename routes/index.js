@@ -85,7 +85,7 @@ router.get("/api/google-events", async (req, res) => {
     const timeMin = new Date(year, 0, 1).toISOString();
     const timeMax = new Date(year, 11, 31, 23, 59, 59).toISOString();
     
-    const apiKey = ''; // Your ApiKey from Google Calendar Api
+    const apiKey = process.env.API_KEY; // Your ApiKey from Google Calendar Api
     
     // Try to fetch from Google Calendar
     const calendarId = encodeURIComponent('en.NG#holiday@group.v.calendar.google.com');
