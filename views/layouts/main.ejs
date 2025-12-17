@@ -192,9 +192,7 @@
       if (active) active.classList.add('active');
     });
 
-    /* ======================
- NAVBAR: set active based on path (non-destructive)
-====================== */
+    // NAVBAR: set active based on path
     function setActiveNav() {
       try {
         const navBtns = Array.from(document.querySelectorAll('nav.nav .nav-btn[data-target]'));
@@ -222,9 +220,7 @@
       }
     }
 
-    /* ======================
-SIDEBAR: mobile menu toggle
-====================== */
+    // SIDEBAR: mobile menu toggle
     function openSidebar() {
       try {
         const nav = document.querySelector('nav.nav');

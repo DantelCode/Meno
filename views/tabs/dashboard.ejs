@@ -4,12 +4,12 @@
   <div class="stat-left">
     <div style="margin-left: 8px;">
       <p style="font-weight:700; font-size:20px;">Welcome Back</p>
-      <small class="muted">Just organize your life</small>
+      <small class="muted">Streamline routines, Stay organized, Stay Productive</small>
     </div>
 
     <div class="stats-container">
       <div class="overview card">
-        <strong style="margin-bottom: 8px;">Overview</strong>
+        <strong style="margin-bottom: 16px;">Overview</strong>
         <div class="stats">
           <span class="progress-bar"></span>
           <small class="percentage">0%</small>
@@ -19,7 +19,7 @@
             <div class="indicate complete"></div> Completed
           </small>
           <small class="card">
-            <div class="indicate undone"></div>Undone
+            <div class="indicate undone"></div> Undone
           </small>
         </div>
       </div>
@@ -40,8 +40,10 @@
             <span>0<small>/0</small></span>
           </div>
         </div>
+
         <div class="stat card">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="stat-icon" fill="var(--warning)">
+            <title>Meals</title>
             <path d="M495.361,105.561H317.897c-9.518,0-16.943,8.28-15.905,17.741c2.705,24.679,8.757,79.886,14.786,134.89
               c-6.641-0.507-13.24,0.784-19.169,3.794c-4.624-19.28-29.465-34.236-50.998-24.761c-13.954-24.512-49.669-24.112-63.591,0.01
               c-21.501-9.461-46.326,5.505-50.998,24.758c-20.255-10.298-45.925,0.502-52.053,22.891
@@ -66,6 +68,7 @@
             <span>0<small>/0</small></span>
           </div>
         </div>
+
         <div class="stat card">
           <svg class="stat-icon stat-icon--shopping" width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Shopping">
             <title>Shopping</title>
@@ -80,17 +83,18 @@
         </div>
       </div>
     </div>
+
     <!-- Search: filter today's items across tables -->
     <div class="search-row">
-      <input id="dashboardSearch" placeholder="Search today's items..." class="card" style="width:100%;padding:12px;color:var(--text)" />
+      <input type="search" id="dashboardSearch" placeholder="Search today's items..." class="card" style="width:100%;padding:12px;color:var(--text)" />
     </div>
   </div>
 
   <div class="today">
     <div class="table card">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
+      <div>
         <strong>Today's Events</strong>
-        <a href="events" class="nav-btn" style="font-size: 12px; font-weight: 500; padding: 8px 12px;">View All</a>
+        <a href="events" class="nav-btn">View All</a>
       </div>
 
       <table>
@@ -106,9 +110,9 @@
     </div>
 
     <div class="table card">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
+      <div>
         <strong>Today's Meals</strong>
-        <a href="meals" class="nav-btn" style="font-size: 12px; font-weight: 500; padding: 8px 12px;">View All</a>
+        <a href="meals" class="nav-btn">View All</a>
       </div>
 
       <table>
@@ -124,9 +128,9 @@
     </div>
 
     <div class="table card">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
+      <div>
         <strong>Today's Shopping Plans</strong>
-        <a href="shopping" class="nav-btn" style="font-size: 12px; font-weight: 500; padding: 8px 12px;">View All</a>
+        <a href="shopping" class="nav-btn">View All</a>
       </div>
 
       <table>

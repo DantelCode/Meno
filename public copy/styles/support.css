@@ -1,0 +1,227 @@
+/* === Main ==== */
+main {
+    padding: calc(var(--header-h) + 24px) 32px 24px 32px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(var(--glass-blur));
+    border-radius: 12px;
+}
+
+/* Calendar & Events Styling */
+section {
+    gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    height: fit-content;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+}
+
+form {
+    display: grid;
+    padding: 24px 16px;
+    grid-template-rows: auto 1fr;
+    gap: 16px;
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
+}
+
+form div {
+    display: grid;
+    gap: 8px;
+    height: fit-content;
+}
+
+form input,
+button,
+textarea {
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: var(--text-primary);
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    transition: all 0.2s ease;
+}
+
+form textarea {
+    min-height: 200px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+form button {
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--primary);
+    color: var(--text-primary );
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--primary-light);
+}
+
+form input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(var(--accent), 0.1);
+}
+
+.donate {
+    padding: 24px 16px;
+    display: grid;
+    height: fit-content;
+    gap: 16px;
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
+}
+
+.donate span {
+    display: grid;
+    text-align: center;
+    gap: 4px;
+    color: var(--text-primary);
+}
+
+.donate a {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    background: rgba(var(--accent), 0.1);
+    border: 1px solid rgba(var(--accent), 0.2);
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: visible;
+}
+
+.donate a:hover {
+    background: rgba(var(--accent), 0.15);
+    border-color: rgba(var(--accent), 0.3);
+}
+
+.code {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.qr {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-light);
+}
+
+.qr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Divider for donate card */
+.divider {
+    width: 100%;
+    height: 1px;
+    border: none;
+    margin: 8px 0 12px 0;
+    background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+}
+
+/* Social links (icon-only) */
+.socials {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+    text-decoration: none;
+    transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.social-link svg { width: 20px; height: 20px; }
+
+.social-link:hover {
+    transform: translateY(-2px);
+    background: var(--btn-hover-bg);
+    color: var(--primary);
+}
+
+.social-link:active { transform: translateY(0); }
+
+/* Donate button micro-animations */
+.donate a::after {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffd166, #f5a623);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    transform: translateY(0) scale(0);
+    opacity: 0;
+}
+
+.donate a.animating {
+    animation: donatePulse 700ms ease;
+}
+
+.donate a.animating::after {
+    animation: coinPop 900ms cubic-bezier(.15,.85,.55,1) forwards;
+}
+
+@keyframes donatePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+
+@keyframes coinPop {
+    0% { transform: translateY(0) scale(0); opacity: 0; }
+    20% { transform: translateY(-6px) scale(1.0); opacity: 1; }
+    100% { transform: translateY(-28px) scale(0.7); opacity: 0; }
+}
