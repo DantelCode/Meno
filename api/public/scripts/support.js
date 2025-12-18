@@ -9,9 +9,9 @@
  * EmailJS service, template, and public key
  * Get these from your EmailJS dashboard after setting up a service and template
  */
-const EMAIL_SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;        // Your EmailJS Service ID
-const EMAIL_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;      // Your EmailJS Template ID
-const EMAIL_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;   // Your EmailJS Public Key
+const EMAIL_SERVICE_ID = '';        // Your EmailJS Service ID
+const EMAIL_TEMPLATE_ID = '';      // Your EmailJS Template ID
+const EMAIL_PUBLIC_KEY = '';   // Your EmailJS Public Key
 
 // DOM ELEMENT REFERENCES
 const supportForm = document.querySelector('form');

@@ -27,25 +27,22 @@ A comprehensive web-based life organization application designed to help profess
 - EmailJS for User Feedback
 
 
-### Live Site: [link here...]
+### Live Site: https://meno-orpin.vercel.app/
 
 
 ### Getting started:
 - Install: npm install
-- Run: node server.js
+- Uncomment: api/server.js(line 28-36)
+- Run: node api/server.js
 - Open: http://localhost:3000
-- Note: Fetch Google Events and Send Feedback is not active as Google Api Key and EmailJS credentials are required.
+- Note: Fetch Google Events and Send Feedback will require Google Api Key and EmailJS credentials to function.
 
 
 ### Feature Implementation:
 - User accounts & DB persistence (e.g., MongoDB) to sync data across devices
 - Reminders/notifications (push or email) for upcoming events and shopping
-- Recurring events/meal plans and a scheduler UI
-- Import/Export (CSV, iCal) for data portability
-- Shareable lists (collaborative shopping or meal planning)
-- Offline support and background sync with Service Worker
 - Multiple calendar integrations (Google, Outlook) and color tags
-- Accessibility improvements and ARIA attributes where needed
+- Offline support and background sync with Service Worker
 
 
 This project demonstrates my commitment to building practical, user-centered solutions that improve daily productivity.
