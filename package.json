@@ -1,0 +1,25 @@
+{
+  "name": "meno",
+  "version": "1.0.0",
+  "description": "routine management system",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "nodemon api/server.js"
+  },
+  "keywords": ["vanilla javascript", "nodejs", "express", "express-layouts", "api", "emailjs"],
+  "author": "dantel",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.2",
+    "mongoose": "^9.0.2",
+    "node-fetch": "^2.7.0",
+    "passport": "^0.7.0",
+    "path": "^0.12.7"
+  }
+}

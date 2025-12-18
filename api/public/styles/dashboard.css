@@ -1,0 +1,240 @@
+/* === Main Layout === */
+main {
+    padding: calc(var(--header-h) + 24px) 24px 24px 24px;
+    position: relative;
+}
+
+#dashboard {
+    min-height: calc(100vh - var(--header-h) - 48px);
+}
+
+/* === Dashboard Grid === */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.stat-left {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 16px;
+}
+
+/* === Cards === */
+.card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    backdrop-filter: blur(var(--glass-blur));
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--primary-border);
+    box-shadow: var(--shadow-md);
+}
+
+.overview {
+    border-radius: 12px;
+    padding: 16px;
+    display: grid;
+}
+
+.stats {
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    border: 50px solid;
+    box-sizing: border-box;
+    border-color: rgb(108, 92, 231) rgb(108, 92, 231) #ddd #ddd;
+    border-radius: 50%;
+    transform: rotate(-225deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.stats small {
+    font-size: 3rem;
+}
+
+.indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.indicators small {
+    border-radius: 20px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    user-select: none;
+}
+
+.indicate {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.complete {
+    background: rgb(108, 92, 231);
+}
+
+.undone {
+    background: #ddd;
+}
+
+
+.stat-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.quote {
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.stat {
+    border-radius: 12px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+}
+
+.stat svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 12px;
+}
+
+.stat div {
+    display: grid;
+    gap: 4px;
+}
+
+.stat div span:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.stat div span:nth-of-type(2) {
+    font-size: 2rem;
+}
+
+.stat div span:nth-of-type(2) small {
+    font-size: 1.3rem;
+}
+
+.stat-icon {
+    color: var(--primary, #1670ef);
+}
+
+.stat-icon--meals {
+    color: var(--warning, #ff9800);
+}
+
+.stat-icon--shopping {
+    color: var(--success, #10b981);
+}
+
+.stat-icon--events {
+    color: var(--primary, #1670ef);
+}
+
+body[data-theme="dark"] .card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+.table {
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 24px;
+}
+
+.table>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table>div a {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+thead th {
+    font-weight: 700;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+th input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+}
+
+@media (max-width:600px) {
+    #dashboard {
+        padding: 0;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        width: 100%;
+        height: 100px;
+    }
+
+    .progress-bar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .stats small {
+        font-size: 2rem;
+    }
+
+    .stat-right {
+        grid-template-columns: 1fr;
+    }
+}
